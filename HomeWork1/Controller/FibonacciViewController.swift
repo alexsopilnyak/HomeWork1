@@ -11,6 +11,7 @@ class FibonacciViewController: UIViewController {
   
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var resultLabel: UILabel!
+  @IBOutlet weak var clearButtonPressed: UIButton!
   
   
   override func viewDidLoad() {
@@ -20,18 +21,27 @@ class FibonacciViewController: UIViewController {
   @IBAction func calculateButtonPressed(_ sender: UIButton) {
     
     if let numberFromTextField = textField.text {
-      guard let number = Int(numberFromTextField) else{print("Casting error"); return}
+      guard let number = Int(numberFromTextField) else { print("Casting error")
+        self.resultLabel.text = "Could not cast number to Int"
+        return
+        
+      }
       
-      let fibonacciSequence = Fibonacci().fibonacciSequence(till: number)
-      resultLabel.text = fibonacciSequence.description
+      
+      DispatchQueue.main.async {
+        let fibonacciSequence = Fibonacci().fibonacciSequence(till: number)
+        self.resultLabel.text = fibonacciSequence.description
+      }
+      
     }
-    
-    
-    
-    
-    
-    
     
   }
   
+  
+  @IBAction func clearButtonPressed(_ sender: UIButton) {
+    textField.text = ""
+    resultLabel.text = ""
+  }
+  
 }
+
