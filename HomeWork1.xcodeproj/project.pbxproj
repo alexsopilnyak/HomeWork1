@@ -9,20 +9,21 @@
 /* Begin PBXBuildFile section */
 		E5B56130257D453900243DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5612F257D453900243DA4 /* AppDelegate.swift */; };
 		E5B56132257D453900243DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56131257D453900243DA4 /* SceneDelegate.swift */; };
-		E5B56134257D453900243DA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56133257D453900243DA4 /* ViewController.swift */; };
 		E5B56137257D453900243DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B56135257D453900243DA4 /* Main.storyboard */; };
 		E5B56139257D453A00243DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B56138257D453A00243DA4 /* Assets.xcassets */; };
 		E5B5613C257D453A00243DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B5613A257D453A00243DA4 /* LaunchScreen.storyboard */; };
 		E5B56149257D472C00243DA4 /* FactorialCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56148257D472C00243DA4 /* FactorialCalculator.swift */; };
 		E5B5614C257D474200243DA4 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5614B257D474200243DA4 /* Fibonacci.swift */; };
 		E5B5614F257D478900243DA4 /* PiPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5614E257D478900243DA4 /* PiPresentation.swift */; };
+		E5B56155257D59B300243DA4 /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56154257D59B300243DA4 /* FibonacciViewController.swift */; };
+		E5B56158257D5AB500243DA4 /* FactorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56157257D5AB500243DA4 /* FactorialViewController.swift */; };
+		E5B5615B257D5B1A00243DA4 /* PiNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5615A257D5B1A00243DA4 /* PiNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5B5612C257D453900243DA4 /* HomeWork1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B5612F257D453900243DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B56131257D453900243DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5B56133257D453900243DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5B56136257D453900243DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5B56138257D453A00243DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5B5613B257D453A00243DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		E5B56148257D472C00243DA4 /* FactorialCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialCalculator.swift; sourceTree = "<group>"; };
 		E5B5614B257D474200243DA4 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		E5B5614E257D478900243DA4 /* PiPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPresentation.swift; sourceTree = "<group>"; };
+		E5B56154257D59B300243DA4 /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
+		E5B56157257D5AB500243DA4 /* FactorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialViewController.swift; sourceTree = "<group>"; };
+		E5B5615A257D5B1A00243DA4 /* PiNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 		E5B56147257D469E00243DA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5B56133257D453900243DA4 /* ViewController.swift */,
+				E5B56154257D59B300243DA4 /* FibonacciViewController.swift */,
+				E5B56157257D5AB500243DA4 /* FactorialViewController.swift */,
+				E5B5615A257D5B1A00243DA4 /* PiNumberViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,12 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B5615B257D5B1A00243DA4 /* PiNumberViewController.swift in Sources */,
+				E5B56158257D5AB500243DA4 /* FactorialViewController.swift in Sources */,
 				E5B5614C257D474200243DA4 /* Fibonacci.swift in Sources */,
-				E5B56134257D453900243DA4 /* ViewController.swift in Sources */,
 				E5B56130257D453900243DA4 /* AppDelegate.swift in Sources */,
 				E5B56132257D453900243DA4 /* SceneDelegate.swift in Sources */,
 				E5B5614F257D478900243DA4 /* PiPresentation.swift in Sources */,
 				E5B56149257D472C00243DA4 /* FactorialCalculator.swift in Sources */,
+				E5B56155257D59B300243DA4 /* FibonacciViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
