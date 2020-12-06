@@ -22,7 +22,7 @@ struct Fibonacci {
     
     var sequence = [Int]()
 
-    for i in 0...n {
+    for i in 1...n {
       sequence.append(fibonacciRecursion(i))
     }
 
