@@ -17,10 +17,8 @@ struct Factorial {
     } else {
       for i in 1...number {
         overflowResultTuple = overflowResultTuple.0.multipliedReportingOverflow(by: i)
-        //result = result * i
-        //result *= Int(i)
       }
-
+      
       return overflowResultTuple
     }
   }
@@ -34,7 +32,5 @@ struct Factorial {
       return number.multipliedReportingOverflow(by: calculateByRecursion(of: number - 1).0)
     }
   }
-  
-  
   
 }
