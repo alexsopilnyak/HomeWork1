@@ -66,9 +66,9 @@
 		E5B5612E257D453900243DA4 /* HomeWork1 */ = {
 			isa = PBXGroup;
 			children = (
-				E5B56147257D469E00243DA4 /* Controller */,
-				E5B56146257D469800243DA4 /* View */,
 				E5B56145257D469200243DA4 /* Model */,
+				E5B56146257D469800243DA4 /* View */,
+				E5B56147257D469E00243DA4 /* Controller */,
 				E5B5612F257D453900243DA4 /* AppDelegate.swift */,
 				E5B56131257D453900243DA4 /* SceneDelegate.swift */,
 				E5B56138257D453A00243DA4 /* Assets.xcassets */,
