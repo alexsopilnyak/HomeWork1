@@ -19,7 +19,7 @@ struct PiPresentation {
     } else {
       let digitsArray = piPresentedByString.map {$0}
       
-      return digitsArray[indexOfDigit]
+      return digitsArray[indexOfDigit + 2]
       
     }
   }
