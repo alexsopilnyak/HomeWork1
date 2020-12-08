@@ -7,30 +7,34 @@
 
 import Foundation
 
-struct FactorialCalculator {
+struct Factorial {
   
-  static func iterationCalculation(of number: Int) -> Int {
-    var result = 1
-    
+  static func calculateByIteration(of number: Int) -> (Int, Bool) {  //with
+    var overflowResultTuple = (1, false)
+
     if number == 0 {
-      return 0
+      return (0, false)
     } else {
       for i in 1...number {
-        result *= i
+        overflowResultTuple = overflowResultTuple.0.multipliedReportingOverflow(by: i)
+        //result = result * i
+        //result *= Int(i)
       }
-      
-      return result
+
+      return overflowResultTuple
     }
   }
   
-  static func recursionCalculation(of number: Int) -> Int {
+  static func calculateByRecursion(of number: Int) -> (Int, Bool) {
     
     switch number {
-    case 0: return 0
-    case 1: return 1
+    case 0: return (0, false)
+    case 1: return (1, false)
     default:
-      return number * recursionCalculation(of: number - 1)
+      return number.multipliedReportingOverflow(by: calculateByRecursion(of: number - 1).0)
     }
   }
+  
+  
   
 }
