@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E546B3582580246E00FE79A9 /* Parimatch-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E546B3562580246E00FE79A9 /* Parimatch-Bold.otf */; };
+		E546B3592580246E00FE79A9 /* Parimatch-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E546B3572580246E00FE79A9 /* Parimatch-Regular.otf */; };
 		E5B56130257D453900243DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B5612F257D453900243DA4 /* AppDelegate.swift */; };
 		E5B56132257D453900243DA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B56131257D453900243DA4 /* SceneDelegate.swift */; };
 		E5B56137257D453900243DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B56135257D453900243DA4 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E546B3562580246E00FE79A9 /* Parimatch-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parimatch-Bold.otf"; sourceTree = "<group>"; };
+		E546B3572580246E00FE79A9 /* Parimatch-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parimatch-Regular.otf"; sourceTree = "<group>"; };
 		E5B5612C257D453900243DA4 /* HomeWork1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B5612F257D453900243DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B56131257D453900243DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E546B3552580241F00FE79A9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E546B3562580246E00FE79A9 /* Parimatch-Bold.otf */,
+				E546B3572580246E00FE79A9 /* Parimatch-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		E5B56123257D453900243DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		E5B5612E257D453900243DA4 /* HomeWork1 */ = {
 			isa = PBXGroup;
 			children = (
+				E546B3552580241F00FE79A9 /* fonts */,
 				E5B56145257D469200243DA4 /* Model */,
 				E5B56146257D469800243DA4 /* View */,
 				E5B56147257D469E00243DA4 /* Controller */,
@@ -163,9 +177,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E546B3582580246E00FE79A9 /* Parimatch-Bold.otf in Resources */,
 				E5B5613C257D453A00243DA4 /* LaunchScreen.storyboard in Resources */,
 				E5B56139257D453A00243DA4 /* Assets.xcassets in Resources */,
 				E5B56137257D453900243DA4 /* Main.storyboard in Resources */,
+				E546B3592580246E00FE79A9 /* Parimatch-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
