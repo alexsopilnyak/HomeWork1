@@ -11,16 +11,15 @@ struct PiPresentation {
   
   
   
-  static func digitOfPi(_ numberOfDigits: Int,_ indexOfDigit: Int) -> (Character?, String?) {
-    let piPresentedByString = String(format: "%.\(numberOfDigits)f", Double.pi)
-    print(piPresentedByString)
+  func digitOfPi(by index: Int) -> Character? {
+    let piPresentedByString = String(Double.pi)
     
-    if indexOfDigit > piPresentedByString.count - 1 || numberOfDigits <= 0 || indexOfDigit > numberOfDigits {
-      return (nil, nil)
+    if index > piPresentedByString.count - 1 {
+      return nil
     } else {
       let digitsArray = piPresentedByString.map {$0}
       
-      return (digitsArray[indexOfDigit + 1], piPresentedByString)
+      return digitsArray[index + 2]
       
     }
   }
