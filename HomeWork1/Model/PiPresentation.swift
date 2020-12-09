@@ -9,9 +9,7 @@ import Foundation
 
 struct PiPresentation {
   
-  
-  
-  func digitOfPi(by index: Int) -> Character? {
+  static func digitOfPi(by index: Int) -> Character? {
     let piPresentedByString = String(Double.pi)
     
     if index > piPresentedByString.count - 1 {

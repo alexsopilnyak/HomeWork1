@@ -11,8 +11,6 @@ class PiNumberViewController: UIViewController {
   
   @IBOutlet weak var nthTextField: UITextField!
   @IBOutlet weak var resultLabel: UILabel!
-  @IBOutlet weak var digitsTextField: UITextField!
-  @IBOutlet weak var piLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,24 +19,17 @@ class PiNumberViewController: UIViewController {
   
   @IBAction func calculateButtonPressed(_ sender: UIButton) {
     
-    if let nFromTextField = nthTextField.text, let digits = digitsTextField.text {
+    if let numberFromTextField = nthTextField.text {
       
-      guard let index = Int(nFromTextField) else {
-        self.resultLabel.text = "Could not cast number to Int"
-        print("Casting error")
+      guard let index = Int(numberFromTextField) else {
+        self.resultLabel.text = "Could not cast entered number to Int"
         return
       }
       
-      guard let digitsNumber = Int(digits) else {
-        self.resultLabel.text = "Could not cast number of digits to Int"
-        print("Casting error")
-        return
-      }
       
-      let nthNumber = PiPresentation.digitOfPi(digitsNumber, index)
-      if let nthNumberOfPi = nthNumber.0, let piNumber = nthNumber.1 {
-        resultLabel.text = nthNumberOfPi.description
-        piLabel.text = piNumber
+      let nthNumber = PiPresentation.digitOfPi(by: index)
+      if let nthNumberOfPi = nthNumber {
+        resultLabel.text = "\(index) digit of \(Double.pi) is \(nthNumberOfPi)"
       } else {
         self.resultLabel.text = "Index could not be more than N"
       }

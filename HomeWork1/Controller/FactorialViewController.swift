@@ -18,23 +18,39 @@ class FactorialViewController: UIViewController {
   }
   
   @IBAction func calculateButtonPressed(_ sender: UIButton) {
+    
     if let numberFromTextField = textField.text {
-      guard let number = Int(numberFromTextField) else { print("Casting error")
+      guard let number = Int(numberFromTextField) else {
         self.resultLabel.text = "Could not cast number to Int"
         return
       }
       
-      if recursionSwitch.isOn {
-        resultLabel.text = FactorialCalculator.recursionCalculation(of: number).description
+      var result: (factorial: Int, hasOverflow: Bool)
+      
+      if number < 60 && number >= 0{
+        switch recursionSwitch.isOn {
+        case true: result = Factorial.calculateByRecursion(of: number)
+        case false: result = Factorial.calculateByIteration(of: number)
+        }
+        
+        if result.hasOverflow {
+          resultLabel.text = "Int overflow. Try lower number"
+        } else {
+          resultLabel.text = result.factorial.description
+        }
+        
       } else {
-        resultLabel.text = FactorialCalculator.iterationCalculation(of: number).description
+        resultLabel.text = "Try enter another number"
       }
     }
+    
   }
   
   @IBAction func clearButtonPressed(_ sender: UIButton) {
+    
     textField.text = ""
     resultLabel.text = ""
+    
   }
   
   

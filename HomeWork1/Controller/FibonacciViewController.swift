@@ -19,20 +19,20 @@ class FibonacciViewController: UIViewController {
   }
   
   @IBAction func calculateButtonPressed(_ sender: UIButton) {
-    
+    var stringSequence = ""
     if let numberFromTextField = textField.text {
-      guard let number = Int(numberFromTextField) else { print("Casting error")
-        self.resultLabel.text = "Could not cast number to Int"
+      guard let number = Int(numberFromTextField) else {
+        self.resultLabel.text = "Could not cast entered number to Int"
         return
         
       }
       
+        let fibonacciSequence = Fibonacci().sequence(till: number)
       
-      DispatchQueue.main.async {
-        let fibonacciSequence = Fibonacci().fibonacciSequence(till: number)
-        self.resultLabel.text = fibonacciSequence.description
+      for i in 0..<fibonacciSequence.count {
+        stringSequence += " \(fibonacciSequence[i].description)"
       }
-      
+      self.resultLabel.text = stringSequence
     }
     
   }

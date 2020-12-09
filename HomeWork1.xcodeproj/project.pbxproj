@@ -113,8 +113,8 @@
 		E5B56147257D469E00243DA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5B56154257D59B300243DA4 /* FibonacciViewController.swift */,
 				E5B56157257D5AB500243DA4 /* FactorialViewController.swift */,
+				E5B56154257D59B300243DA4 /* FibonacciViewController.swift */,
 				E5B5615A257D5B1A00243DA4 /* PiNumberViewController.swift */,
 			);
 			path = Controller;
@@ -198,7 +198,7 @@
 				E5B56130257D453900243DA4 /* AppDelegate.swift in Sources */,
 				E5B56132257D453900243DA4 /* SceneDelegate.swift in Sources */,
 				E5B5614F257D478900243DA4 /* PiPresentation.swift in Sources */,
-				E5B56149257D472C00243DA4 /* FactorialCalculator.swift in Sources */,
+				E5B56149257D472C00243DA4 /* Factorial.swift in Sources */,
 				E5B56155257D59B300243DA4 /* FibonacciViewController.swift in Sources */,
 				E5B56149257D472C00243DA4 /* Factorial.swift in Sources */,
 			);

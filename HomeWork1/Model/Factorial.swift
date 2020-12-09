@@ -12,7 +12,7 @@ struct Factorial {
   static func calculateByIteration(of number: Int) -> (Int, Bool) {  //with
     var overflowResultTuple = (1, false)
 
-    if number == 0 {
+    if number <= 0{
       return (0, false)
     } else {
       for i in 1...number {
@@ -24,7 +24,7 @@ struct Factorial {
   }
   
   static func calculateByRecursion(of number: Int) -> (Int, Bool) {
-    
+
     switch number {
     case 0: return (0, false)
     case 1: return (1, false)
