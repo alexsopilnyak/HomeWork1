@@ -11,8 +11,9 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+      
+    print(Fibonacci().fibonacciSequence(till: 50).description)
     
-
   }
 
 
