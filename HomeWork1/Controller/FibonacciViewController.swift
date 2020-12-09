@@ -30,7 +30,7 @@ class FibonacciViewController: UIViewController {
         let fibonacciSequence = Fibonacci().sequence(till: number)
       
       for i in 0..<fibonacciSequence.count {
-        stringSequence += " \(fibonacciSequence[i].description)"
+        stringSequence += "  \(fibonacciSequence[i].description)"
       }
       self.resultLabel.text = stringSequence
     }
@@ -40,7 +40,7 @@ class FibonacciViewController: UIViewController {
   
   @IBAction func clearButtonPressed(_ sender: UIButton) {
     textField.text = ""
-    resultLabel.text = ""
+    resultLabel.text = "Fibonacci sequence"
   }
   
 }

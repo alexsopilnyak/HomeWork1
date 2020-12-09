@@ -26,21 +26,20 @@ class PiNumberViewController: UIViewController {
         return
       }
       
-      
-      let nthNumber = PiPresentation.digitOfPi(by: index)
-      if let nthNumberOfPi = nthNumber {
-        resultLabel.text = "\(index) digit of \(Double.pi) is \(nthNumberOfPi)"
+      if index < 0 || index > 14 {
+        self.resultLabel.text = "Incorrect index. Please inpun index from 0...14"
       } else {
-        self.resultLabel.text = "Index could not be more than N"
+        let nthNumber = PiPresentation.digitOfPi(by: index)
+        if let nthNumberOfPi = nthNumber {
+          resultLabel.text = "\(index) digit of \(Double.pi) is \(nthNumberOfPi)"
+        }
       }
-      
-      
     }
     
   }
   
   @IBAction func clearButtonPressed(_ sender: UIButton) {
-    resultLabel.text = ""
+    resultLabel.text = "Nth number of Pi"
     nthTextField.text = ""
   }
   

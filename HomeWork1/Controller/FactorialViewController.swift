@@ -49,7 +49,7 @@ class FactorialViewController: UIViewController {
   @IBAction func clearButtonPressed(_ sender: UIButton) {
     
     textField.text = ""
-    resultLabel.text = ""
+    resultLabel.text = "RESULT"
     
   }
   
